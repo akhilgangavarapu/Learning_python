@@ -2,9 +2,10 @@ import random
 
 print("Welcome to the Angry Goblin Hunt")
 print("An award-winning game full of adventure and excitement (!)")
+level = input ("enter a difficulty [5-50]")
 gamer_name = input("type in your name")
 print(f"{gamer_name}, do you think you can find the goblin hiding in the kitchen cupboards?")
-print("|_| |_| |_| |_| |_|" )
+print("|_|" *int(level))
 goblin_cupboard = random.randint(1,5)
 for i in range (5):
     cupboard_number = input("Which cupboard do you think the goblin is in [type in number]")
